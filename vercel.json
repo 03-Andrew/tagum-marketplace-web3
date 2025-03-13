@@ -8,11 +8,10 @@
             "destination": "/index.html"
         }
     ],
-    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./api/",
+    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./src/",
     "functions": {
         "api/**/*": {
             "maxDuration": 10
         }
     }
 }
-
