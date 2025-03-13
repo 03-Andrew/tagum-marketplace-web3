@@ -15,7 +15,8 @@ export function useCustomer(){
     const customerForm = ref({ ...initialCustomerForm });
     const filteredCustomerDatas = computed(() => customerDatas.value.filter(
         c => c.name.toLowerCase().includes(customerSearch.value.toLowerCase() ?? '')
-    ));
+    )); // 고객 검색 필터링
+    
 
     const resetCustomerForm = () => {
         customerForm.value = { ...initialCustomerForm };
